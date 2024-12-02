@@ -1,0 +1,61 @@
+{
+  "expo": {
+    "name": "GoCo.io",
+    "slug": "goco-mobile-client",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "light",
+    "splash": {
+      "image": "./assets/splash.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#ffffff"
+    },
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.gococlientapp",
+      "buildNumber": "123456"
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/adaptive-icon.png",
+        "backgroundColor": "#ffffff"
+      },
+      "package": "com.gococlientapp",
+      "permissions": [
+        "android.permission.INTERNET",
+        "android.permission.ACCESS_NETWORK_STATE"
+      ]
+    },
+    "web": {
+      "favicon": "./assets/favicon.png"
+    },
+    "plugins": [
+      [
+        "onesignal-expo-plugin",
+        {
+          "mode": "production"
+        }
+      ],
+      [
+        "@fullstory/react-native",
+        {
+          "version": "1.53.0",
+          "org": "Y29G"
+        }
+      ]
+    ],
+    "extra": {
+      "eas": {
+        "projectId": "61596a8c-8242-40ca-b232-89a01eb27639"
+      }
+    },
+    "owner": "goco-io",
+    "runtimeVersion": {
+      "policy": "appVersion"
+    },
+    "updates": {
+      "url": "https://u.expo.dev/61596a8c-8242-40ca-b232-89a01eb27639"
+    }
+  }
+}
